@@ -2,11 +2,73 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<title></title>
+<style>
+#all {
+  width: 200px;
+  text-shadow: 1px 1px 2px #888;
+}
+
+#logo {
+  width: 200px;
+  font-family: Sans-Serif;
+}
+
+.brackets {
+  font-size: 600%;
+  color: #3333dd;
+}
+
+#leftbrackets {
+  float: left;
+}
+
+#rightbrackets {
+  float: right;
+}
+
+#slash {
+  font-size: 1000%;
+  text-align: center;
+  color: #dd3333;
+  position: relative;
+  top: -26.5px;
+}
+
+#caption {
+  text-align: center;
+  font-family: Sans-Serif;
+  position: relative;
+  top: -55px;
+  font-weight: 600;
+}
+
+#zh {
+  font-size: 125%;
+}
+
+#zh-char {
+  letter-spacing: 2px;
+}
+
+#en {
+  font-size: 85%;
+}
+</style>
 <body>
+   <div id="all">
+     <div id="logo">
+       <div class="brackets" id="leftbrackets">[[</div>
+       <div class="brackets" id="rightbrackets">]]</div>
+       <div id="slash">/</div>
+     </div>
+     <div id="caption">
+       <div id="zh">Minecraft <span id="zh-char">插件百科</span></div>
+       <div id="en">Minecraft Plugin Wiki</div>
+     </div>
+   </div>
    <script type="text/javascript">
-        self.location = "http://mineplugin.org";
+      setTimeout(function(){ self.location = "http://mineplugin.org"; }, 3000);
    </script>
 </body>
 </html>
